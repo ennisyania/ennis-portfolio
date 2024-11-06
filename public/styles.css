@@ -1,0 +1,208 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+body {
+    background-color: transparent;
+    color: #bdbaa7  ;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    opacity: 80%;
+    background-color: #bdbaa7;
+    color: #400504 ;
+}
+
+.background-programming {
+    background-image: url('/images/codesBckgrnd.png'); 
+    background-size:cover;    
+    background-color:#400504 ;
+    background-repeat:repeat-y ;
+    background-attachment: fixed; 
+    min-height: 100vh;           
+}
+
+.background-home {
+    background-image: url('/images/background1.png'); 
+    background-size:cover;     
+    background-color:#400504 ;
+    background-repeat:repeat-y ;
+    background-attachment: fixed; 
+    min-height: 100vh;           
+}
+
+.logo img {
+    width: 30px; 
+    height: auto; 
+    vertical-align: middle;
+}
+
+nav a {
+    margin-left: 15px; 
+    text-decoration: none;
+    color: #400504; 
+}
+
+nav a:hover {
+    color: #666;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('your-background-image-url-here') no-repeat center center/cover;
+    height:800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.general-btn {
+    padding: 20px 60px;
+    font-size: 1.2rem;
+    background-color: #010000;
+    color: #707070;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    display: inline-block; 
+    margin-top: 20px; 
+    text-decoration: none; 
+    text-align: center; 
+}
+
+.general-btn:hover {
+    background-color: #333;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.about-left {
+    display: flex;
+    margin-left: 100px;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.about-image {
+    width: 600px;
+    margin: 40px;
+    border-radius: 40px;
+}
+
+.profile-image {
+    width: 600px;
+    height: 600px;
+    padding: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-text {
+    margin-top: 20px; 
+    text-align: left;
+    width:80%;
+}
+
+
+/* Projects Section */
+.projects {
+    padding: 50px 100px;
+    background-color: #bdbaa7 ;
+    text-align: center; 
+    color: #400504 ;
+    border-radius: 20%;
+    margin: 20px; 
+}
+
+.project-header {
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+/* Programming page section */
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%; /* Limit the width to control layout */
+    background-color: transparent; /* Optional background for better visibility */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    max-width: 600px; /* Adjust to fit your needs */
+    margin-right: 50px;
+    margin-left: 50px; /* Space between image and description */
+    border-radius: 40px;
+}
+
+.description {
+    flex: 1; /* This lets the description take up remaining space */
+}
+
+.description h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.description p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Footer / Contact Section */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #010000;
+}
+
+.contact-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #010000;
+    color: #707070;
+    border: 2px solid #400504;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.contact-btn:hover {
+    background-color: #333;
+}
