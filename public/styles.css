@@ -31,6 +31,15 @@ header {
     min-height: 100vh;           
 }
 
+.background-design {
+    background-image: url('/images/designBckgrnd.png'); 
+    background-size:cover;    
+    background-color:#400504 ;
+    background-repeat:repeat-y ;
+    background-attachment: fixed; 
+    min-height: 100vh;           
+}
+
 .background-home {
     background-image: url('/images/background1.png'); 
     background-size:cover;     
@@ -124,6 +133,13 @@ html {
     width:80%;
 }
 
+/* Divider Style */
+.divider {
+    height: 10px;
+    background-color: #bdbaa7;
+    margin: 40px 0;
+}
+
 
 /* Projects Section */
 .projects {
@@ -140,6 +156,30 @@ html {
     gap: 20px;
 }
 
+/* Design page section */
+.main-design-section {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.main-design-section img.project-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%; 
+}
+
+.main-design-section .description-title {
+    margin-top: 15px; /* Adds space between the image and the description title */
+    font-size: 1.5rem;
+    color: #bdbaa7; 
+}
+
+.main-design-section p {
+    font-size: 1rem;
+    color: #bdbaa7;
+    max-width: 800px;
+    margin: 10px auto;
+}
 
 
 /* Programming page section */
@@ -171,6 +211,7 @@ html {
 
 .description {
     flex: 1; /* This lets the description take up remaining space */
+    margin-left: 50px;
 }
 
 .description h2 {
@@ -181,7 +222,7 @@ html {
 .description p {
     margin-top: 10px;
     font-size: 1em;
-    color: #555;
+    color: #bdbaa7;
 }
 
 /* Footer / Contact Section */

@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fire-Themed Layout</title>
-    </head>
-    <body>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-        <!-- Navigation Bar -->
-        <div class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </div>
-    
+<body class="background-design">
+
+    <%- include ('partials/navbar.ejs') %>
+
         <!-- Content Sections -->
-        <div class="section">
-            <img src="https://via.placeholder.com/600x400" alt="Fire image">
-            <h2>Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="main-design-section">
+            <img src="/images/holdingImage.jpg" alt="Project Image" class="project-image">
+            <h2 class="description-title">Description</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua...</p>
         </div>
-    
+
+
         <div class="divider"></div>
-    
-        <div class="section">
-            <img src="https://via.placeholder.com/600x400" alt="Fire image">
-            <h2>Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="project">
+            <img src="/images/holdingImage.jpg" alt="Project Image" class="project-image">
+            <div class="description">
+                <h2>Description</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua...</p>
+            </div>
         </div>
-    
+
         <div class="divider"></div>
-    
-        <div class="section">
-            <img src="https://via.placeholder.com/600x400" alt="Fire image">
-            <h2>Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <div class="main-design-section">
+            <img src="/images/holdingImage.jpg" alt="Project Image" class="project-image">
+            <h2 class="description-title">Description</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua...</p>
         </div>
-    
-        <!-- Contact Section -->
-        <div class="contact-section">
-            <a href="#" class="contact-button">Contact Me</a>
-        </div>
-    
-    </body>
-    </html>
+
+        <footer>
+            <a href="/contact" class="contact-btn">Contact Me</a>
+        </footer>
+
+</body>
+
+</html>
