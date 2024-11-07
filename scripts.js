@@ -1,70 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Debug log to verify script is running
+    console.log('Script initialized');
+    
     // Carousel functionality
-    let slideIndex = 0;
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-image');
+    
+    // Debug log to check if slides are found
+    console.log('Number of slides found:', slides.length);
 
-    function moveSlide(step) {
-        const slides = document.querySelectorAll('.carousel-image');
-        slideIndex += step;
-
-        if (slideIndex < 0) {
-            slideIndex = slides.length - 1;  // Wrap to the last image
-        } else if (slideIndex >= slides.length) {
-            slideIndex = 0;  // Wrap to the first image
-        }
-
-        // Hide all images
-        slides.forEach(slide => {
-            slide.style.display = 'none';
-        });
-
-        // Show the current image
-        slides[slideIndex].style.display = 'block';
+    // Initialize the first slide
+    if (slides.length > 0) {
+        slides[0].classList.add('active');
+        console.log('First slide activated');
     }
 
-    // Initialize carousel by showing the first image
-    moveSlide(0);
+    // Move slide function
+    window.moveSlide = function(direction) {
+        // Remove active class from current slide
+        slides[currentSlide].classList.remove('active');
+        
+        // Calculate new slide index
+        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+        
+        // Add active class to new slide
+        slides[currentSlide].classList.add('active');
+        
+        console.log('Moved to slide:', currentSlide);
+    };
 
-    // Additional functionality
-    // Toggle visibility of an element (if needed for other parts of your page)
-    function toggleVisibility(elementId) {
-        const element = document.getElementById(elementId);
-        if (element) {
-            element.style.display = element.style.display === 'none' ? 'block' : 'none';
-        }
+    // Add click events to prev/next buttons
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    if (prevButton) {
+        prevButton.addEventListener('click', () => moveSlide(-1));
     }
-
-    // Attach event listener to a button to toggle visibility of content
-    const toggleButton = document.getElementById('toggleButton');
-    if (toggleButton) {
-        toggleButton.addEventListener('click', function () {
-            toggleVisibility('toggleContent');
-        });
-    }
-
-    // Function to change text content of an element
-    function changeTextContent(elementId, newText) {
-        const element = document.getElementById(elementId);
-        if (element) {
-            element.textContent = newText;
-        }
-    }
-
-    // Attach event listener to a button to change text content
-    const textChangeButton = document.getElementById('textChangeButton');
-    if (textChangeButton) {
-        textChangeButton.addEventListener('click', function () {
-            changeTextContent('textElement', 'New Text Content!');
-        });
-    }
-
-    // Example of handling form submission (if needed)
-    const form = document.getElementById('myForm');
-    if (form) {
-        form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent page refresh
-            const formData = new FormData(form);
-            console.log('Form submitted:', Object.fromEntries(formData));
-            // Add additional form handling logic here
-        });
+    
+    if (nextButton) {
+        nextButton.addEventListener('click', () => moveSlide(1));
     }
 });
