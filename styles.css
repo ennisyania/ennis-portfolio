@@ -338,12 +338,6 @@ button:hover {
     right: 0;
 }
 
-/* Optional: style for the carousel image */
-.carousel-image {
-    max-width: 100%;
-    height: auto;  /* Prevent stretching */
-    border-radius: 15px;  /* Optional, gives the images rounded corners */
-}
 
 /* Programming Page Section */
 .project-section {
