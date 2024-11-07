@@ -1,6 +1,4 @@
-// Wait for the DOM to load before executing
 document.addEventListener('DOMContentLoaded', function () {
-
     // Carousel functionality
     let currentIndex = 0;
 
@@ -20,10 +18,26 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize the carousel by showing the first image
     const images = document.querySelectorAll('.carousel-image');
     if (images.length > 0) {
+        // Add 'active' class to the first image
         images[currentIndex].classList.add('active');
     }
 
-    // Toggle visibility of an element
+    // Add event listeners for carousel buttons
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    if (prevButton) {
+        prevButton.addEventListener('click', function () {
+            moveSlide(-1); // Move to previous image
+        });
+    }
+    if (nextButton) {
+        nextButton.addEventListener('click', function () {
+            moveSlide(1); // Move to next image
+        });
+    }
+
+    // Additional functionality
+    // Toggle visibility of an element (if needed for other parts of your page)
     function toggleVisibility(elementId) {
         const element = document.getElementById(elementId);
         if (element) {
@@ -55,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Example of handling form submission
+    // Example of handling form submission (if needed)
     const form = document.getElementById('myForm');
     if (form) {
         form.addEventListener('submit', function (event) {
@@ -65,19 +79,4 @@ document.addEventListener('DOMContentLoaded', function () {
             // Add additional form handling logic here
         });
     }
-
-    // Add event listeners for carousel buttons
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    if (prevButton) {
-        prevButton.addEventListener('click', function () {
-            moveSlide(-1);
-        });
-    }
-    if (nextButton) {
-        nextButton.addEventListener('click', function () {
-            moveSlide(1);
-        });
-    }
-
 });
