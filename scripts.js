@@ -1,40 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Carousel functionality
-    let currentIndex = 0;
+    let slideIndex = 0;
 
-    function moveSlide(direction) {
-        const images = document.querySelectorAll('.carousel-image');
-        
-        // Remove 'active' class from the current image
-        images[currentIndex].classList.remove('active');
+    function moveSlide(step) {
+        const slides = document.querySelectorAll('.carousel-image');
+        slideIndex += step;
 
-        // Update the current index based on the direction
-        currentIndex = (currentIndex + direction + images.length) % images.length;
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;  // Wrap to the last image
+        } else if (slideIndex >= slides.length) {
+            slideIndex = 0;  // Wrap to the first image
+        }
 
-        // Add 'active' class to the new image
-        images[currentIndex].classList.add('active');
-    }
-
-    // Initialize the carousel by showing the first image
-    const images = document.querySelectorAll('.carousel-image');
-    if (images.length > 0) {
-        // Add 'active' class to the first image
-        images[currentIndex].classList.add('active');
-    }
-
-    // Add event listeners for carousel buttons
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-    if (prevButton) {
-        prevButton.addEventListener('click', function () {
-            moveSlide(-1); // Move to previous image
+        // Hide all images
+        slides.forEach(slide => {
+            slide.style.display = 'none';
         });
+
+        // Show the current image
+        slides[slideIndex].style.display = 'block';
     }
-    if (nextButton) {
-        nextButton.addEventListener('click', function () {
-            moveSlide(1); // Move to next image
-        });
-    }
+
+    // Initialize carousel by showing the first image
+    moveSlide(0);
 
     // Additional functionality
     // Toggle visibility of an element (if needed for other parts of your page)
