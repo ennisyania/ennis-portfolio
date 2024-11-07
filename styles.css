@@ -333,18 +333,20 @@ footer {
     background-color: #010000;
 }
 
-footer p {
-    font-size: xx-small;
+.footer-container {
+    text-align: center; /* Center the content */
+    padding: 10px;
 }
 
 .contact-btn {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    background-color: #010000;
-    color: #707070;
-    border: 2px solid #400504;
-    cursor: pointer;
-    border-radius: 40px;
+    display: inline-block;
+    margin-bottom: 10px; /* Add some space below the button */
+}
+
+.copyright {
+    font-size: 12px; /* Make the text smaller */
+    color: #666; /* Optionally make it a lighter color */
+    margin: 0; /* Remove default paragraph margin */
 }
 
 .contact-btn:hover {
