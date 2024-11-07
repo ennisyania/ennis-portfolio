@@ -326,12 +326,15 @@ html {
 /* Footer / Contact Section */
 footer {
     display: flex;
-    font-size: 5px;
     justify-content: center;
     align-items: center;
     padding: 20px;
     color: #707070;
     background-color: #010000;
+}
+
+footer p {
+    font-size: xx-small;
 }
 
 .contact-btn {
