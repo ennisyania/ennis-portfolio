@@ -339,10 +339,6 @@ footer {
     padding: 10px;
 }
 
-.contact-btn {
-    display: inline-block;
-    margin-bottom: 10px; /* Add some space below the button */
-}
 
 .copyright {
     font-size: 12px; /* Make the text smaller */
