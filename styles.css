@@ -288,10 +288,11 @@ html {
     padding: 20px;
 }
 
+/* Carousel container and images */
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 600px; /* You can adjust this to your desired size */
+    max-width: 600px;  /* Adjust this size if needed */
     margin: auto;
     overflow: hidden;
 }
@@ -302,17 +303,17 @@ html {
 }
 
 .carousel-image {
-    width: 100%;
-    display: none; /* Ensure non-active images are hidden */
-    opacity: 0; /* Set opacity to 0 initially */
-    transition: opacity 1s ease-in-out;
+    width: 100%;  /* Make sure images fill the container */
+    opacity: 0;  /* Start images with opacity 0 */
+    transition: opacity 1s ease-in-out;  /* Smooth transition for opacity */
+    object-fit: cover;  /* This will maintain the aspect ratio */
 }
 
 .carousel-image.active {
-    display: block;  /* Only active images are displayed */
-    opacity: 1;      /* Fully visible */
+    opacity: 1;  /* Only the active image will be fully visible */
 }
 
+/* Carousel buttons (left and right) */
 button {
     position: absolute;
     top: 50%;
@@ -335,6 +336,13 @@ button:hover {
 
 .next {
     right: 0;
+}
+
+/* Optional: style for the carousel image */
+.carousel-image {
+    max-width: 100%;
+    height: auto;  /* Prevent stretching */
+    border-radius: 15px;  /* Optional, gives the images rounded corners */
 }
 
 /* Programming Page Section */
