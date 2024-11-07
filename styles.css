@@ -139,11 +139,18 @@ html {
 
 .contact-button {
     background-color: #000; 
-    padding: 20px 40px; 
-    border-radius: 15px; 
+    margin: 30px;
+    padding: 40px 100px; 
+    border-radius: 60px; 
+    width:500px;
     display: flex; 
     align-items: center; 
-    text-decoration: none;           
+    text-decoration: none;
+}
+
+.contact-button img {
+    width: auto; 
+    height:50px;
 }
 
 /* Buttons */
