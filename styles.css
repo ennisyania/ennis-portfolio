@@ -35,27 +35,27 @@ header {
 }
 
 .background-programming {
-    background-image: url('/images/codesBckgrnd.png');
+    background-image: url('images/codesBckgrnd.png');
     background-color: #400504;
 }
 
 .background-design {
-    background-image: url('/images/designBckgrnd.png');
+    background-image: url('images/designBckgrnd.png');
     background-color: #400504;
 }
 
 .background-home {
-    background-image: url('/images/background1.png');
+    background-image: url('images/background1.png');
     background-color: #400504;
 }
 
 .background-projects {
-    background-image: url('/images/bckgrnd2.png');
+    background-image: url('images/bckgrnd2.png');
     background-color: #400504;
 }
 
 .background-about {
-    background-image: url('/images/aboutBckgrnd.png');
+    background-image: url('images/aboutBckgrnd.png');
     background-color: #400504;
 }
 
