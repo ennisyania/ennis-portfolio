@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Enni Sya'nia - Aspiring Software Engineer Portfolio">
-        <title>Enni Sya'nia | Aspiring Software Engineer</title>
-        <link rel="stylesheet" type="text/css" href="../styles.css">
-
-        <link rel="icon" href="../images/Logo.png" type="image/png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enni Sya'nia - Aspiring Software Engineer Portfolio">
+    <title>Enni Sya'nia | Aspiring Software Engineer</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <link rel="icon" href="../images/Logo.png" type="image/png">
+</head>
 <body class="background-design">
     <header>
         <div class="logo">
@@ -32,29 +31,59 @@
         <div class="divider"></div>
 
         <section class="project">
-            <img src="../images/holdingImage.jpg" alt="Project Image" class="project-image">
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="../images/bckgrnd2.png" alt="Project Image 1" class="carousel-image">
+                    <img src="../images/Back.png" alt="Project Image 2" class="carousel-image">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+            <!-- Description -->
             <div class="description">
-                <h2>Description</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+                <h2>Name Card Design</h2>
+                <p>This name card is something I designed to represent 
+                    me as a person and the feeling I want to convey to 
+                    people with whom I want to make connections in my career. This name card was made using Canva, but I used my own layout. I decided to keep the color mostly red, using a yellowish beige to add a pop of color where needed to emphasize certain elements.
+                    <br>
+                    The front of the name card features a simple layout 
+                    with my logo in the middle, creating a sense of focus on it and drawing the most attention, as it is balanced right in the center. The back of the card mainly required layout planning, ensuring there were margins within sections to provide some breathing room for better readability.
+                    <br>
+                    This project taught me how to use color to emphasize 
+                    what needs emphasis and the importance of layout to 
+                    ensure readability.
+                </p>
             </div>
         </section>
 
         <div class="divider"></div>
 
         <section class="main-design-section">
-            <img src="../images/holdingImage.jpg" alt="Project Image" class="project-image">
-            <h2 id="description-2" class="description-title">Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+            <img src="../images/City in Nature Green Plan.png" alt="Project Image" class="project-image">
+            <h2 id="description-2" class="description-title">City in Nature EDM</h2>
+            <p>In this project, I was tasked with making an EDM for one 
+                of the Singapore Green Plan pillars. In this EDM, 
+                I utilized the design rule of emphasis to capture the 
+                viewer's attention with the bright yellow flower. This 
+                was entirely done using Illustrator, completely by me. 
+                From this project, I have learned the importance of 
+                colour schemes, as it was quite difficult for me to 
+                choose colours that blended well together and did not 
+                disrupt readability.  
+            </p>
         </section>
 
         <footer>
             <div class="footer-container">
-                <a href="views/contact.html" class="contact-btn">Contact Me</a>
+                <a href="contact.html" class="contact-btn">Contact Me</a>
                 <br>
                 <p class="copyright">Copyright © Enni Sya'nia 2024</p>
             </div>
         </footer>
     </main>
-    <script src="script.js"></script>
+
+    <script src="/scripts.js"></script>
 </body>
 </html>

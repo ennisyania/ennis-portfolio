@@ -1,6 +1,28 @@
 // Wait for the DOM to load before executing
 document.addEventListener('DOMContentLoaded', function () {
 
+    // Carousel functionality
+    let currentIndex = 0;
+
+    function moveSlide(direction) {
+        const images = document.querySelectorAll('.carousel-image');
+        
+        // Remove 'active' class from the current image
+        images[currentIndex].classList.remove('active');
+
+        // Update the current index based on the direction
+        currentIndex = (currentIndex + direction + images.length) % images.length;
+
+        // Add 'active' class to the new image
+        images[currentIndex].classList.add('active');
+    }
+
+    // Initialize the carousel by showing the first image
+    const images = document.querySelectorAll('.carousel-image');
+    if (images.length > 0) {
+        images[currentIndex].classList.add('active');
+    }
+
     // Toggle visibility of an element
     function toggleVisibility(elementId) {
         const element = document.getElementById(elementId);
@@ -43,5 +65,19 @@ document.addEventListener('DOMContentLoaded', function () {
             // Add additional form handling logic here
         });
     }
-});
 
+    // Add event listeners for carousel buttons
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    if (prevButton) {
+        prevButton.addEventListener('click', function () {
+            moveSlide(-1);
+        });
+    }
+    if (nextButton) {
+        nextButton.addEventListener('click', function () {
+            moveSlide(1);
+        });
+    }
+
+});

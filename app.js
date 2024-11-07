@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 
 // Serve static files from the public directory (CSS, JS, images, etc.)
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve static HTML files from the 'views' directory
 app.use(express.static(path.join(__dirname, 'views')));

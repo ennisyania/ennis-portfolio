@@ -153,6 +153,8 @@ html {
     height:50px;
 }
 
+
+
 /* Buttons */
 .general-btn,
 .contact-btn {
@@ -197,7 +199,7 @@ html {
 }
 
 .profile-image {
-    width: 600px;
+    width: 60px;
     height: 600px;
     padding: 50px;
     border-radius: 50%;
@@ -222,6 +224,8 @@ html {
 .text-content {
     flex: 1;
     text-align: center; /* Center text */
+    background-color: rgba(52, 2, 2, 0.4);
+    border-radius: 20%;
 }
 
 .section-image {
@@ -275,6 +279,62 @@ html {
     color: #bdbaa7;
     max-width: 800px;
     margin: 10px auto;
+}
+
+.project {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* You can adjust this to your desired size */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+    width: 100%;
+    display: none; /* Ensure non-active images are hidden */
+    opacity: 0; /* Set opacity to 0 initially */
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+    display: block;  /* Only active images are displayed */
+    opacity: 1;      /* Fully visible */
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
 }
 
 /* Programming Page Section */

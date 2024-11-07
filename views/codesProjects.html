@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Enni Sya'nia - Aspiring Software Engineer Portfolio">
-        <title>Enni Sya'nia | Aspiring Software Engineer</title>
-        <link rel="stylesheet" type="text/css" href="../styles.css">
 
-        <link rel="icon" href="../images/Logo.png" type="image/png">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enni Sya'nia - Aspiring Software Engineer Portfolio">
+    <title>Enni Sya'nia | Aspiring Software Engineer</title>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+
+    <link rel="icon" href="../images/Logo.png" type="image/png">
+</head>
+
 <body class="background-programming">
     <header>
         <div class="logo">
@@ -28,10 +30,20 @@
 
     <main id="project-section" class="project-section">
         <section class="project">
-            <img src="../images/holdingImage.jpg" alt="Project Image" class="project-image">
-            <div class="description">
-                <h2>Description</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <video controls width="600">
+                <source src="../images/1108.mp4" type="video/mp4" class="project-image">
+            </video>    
+                <div class="description">
+            <h2>Movie Review App</h2>
+            <p>This is a basic Movie Reviews app that I created to continue 
+                enhancing my programming skills. I used EJS, JavaScript, and CSS to 
+                build this basic website. The project took me around two days to 
+                complete as I was learning how to implement new features that I had 
+                not worked with before during the process.
+                <br>
+                This project taught me the basics of how websites can work with databases, 
+                allowing for live editing within the website.
+            </p>
             </div>
         </section>
 
@@ -62,11 +74,12 @@
 
     <footer>
         <div class="footer-container">
-            <a href="views/contact.html" class="contact-btn">Contact Me</a>
+            <a href="contact.html" class="contact-btn">Contact Me</a>
             <br>
             <p class="copyright">Copyright © Enni Sya'nia 2024</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="/scripts.js"></script>
 </body>
+
 </html>
