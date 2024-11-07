@@ -90,6 +90,7 @@ html {
     position: relative;
 } 
 
+/* Projects selection page */
 .project-button-sections {
     height: 800px;
     display: flex;
@@ -126,6 +127,24 @@ html {
 }
 
 
+
+/* Contact page */
+.contact-button-sections {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.contact-button {
+    background-color: #000; 
+    padding: 20px 40px; 
+    border-radius: 15px; 
+    display: flex; 
+    align-items: center; 
+    text-decoration: none;           
+}
 
 /* Buttons */
 .general-btn,
@@ -310,6 +329,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    color: #707070;
     background-color: #010000;
 }
 
