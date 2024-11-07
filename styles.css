@@ -296,6 +296,7 @@ html {
     margin: auto;
     overflow: hidden;
     height: 400px; /* Add fixed height to maintain container size */
+    border: 1px solid #ccc;  /* Temporary border to see container */
 }
 
 .carousel {
