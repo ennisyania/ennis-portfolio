@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enni Sya'nia | Aspiring Software Engineer</title>
+    <title>Design Projects | Enni Sya'nia</title>
     <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/images/Logo.png" type="image/png">
 </head>
-
 <body class="background-design">
-
-    <%- include ('partials/navbar.html') %>
-
-        <!-- Content Sections -->
-        <div class="main-design-section">
-            <img src="/images/holdingImage.jpg" alt="Project Image" class="project-image">
-            <h2 class="description-title">Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua...</p>
+    <header>
+        <div class="logo">
+            <img src="/images/Logo.png" alt="EN">
         </div>
+        <nav style="font-weight: bold;">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
 
+    <main>
+        <section class="main-design-section">
+            <img src="/images/holdingImage.jpg" alt="Project Image" class="project-image">
+            <h2 id="description" class="description-title">Description</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </section>
 
         <div class="divider"></div>
 
-        <div class="project">
+        <section class="project">
             <img src="/images/holdingImage.jpg" alt="Project Image" class="project-image">
             <div class="description">
                 <h2>Description</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
             </div>
-        </div>
+        </section>
 
         <div class="divider"></div>
 
-        <div class="main-design-section">
+        <section class="main-design-section">
             <img src="/images/holdingImage.jpg" alt="Project Image" class="project-image">
-            <h2 class="description-title">Description</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua...</p>
-        </div>
+            <h2 id="description-2" class="description-title">Description</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        </section>
 
         <footer>
             <a href="/contact" class="contact-btn">Contact Me</a>
         </footer>
-
+    </main>
 </body>
-
 </html>

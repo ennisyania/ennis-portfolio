@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enni Sya'nia | Aspiring Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About | Enni Sya'nia</title>
+    <link rel="stylesheet" href="/styles.css">
     <link rel="icon" href="/images/Logo.png" type="image/png">
 </head>
 <body class="background-about">
+    <header>
+        <div class="logo">
+            <img src="/images/Logo.png" alt="EN">
+        </div>
+        <nav style="font-weight: bold;">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
 
-    <%- include ('partials/navbar.html') %>
-
-    <!-- Main Content -->
-    <div id="header">
-        Enni Sya'nia
-    </div>
+    <div id="header">Enni Sya'nia</div>
 
     <main>
-        <!-- Intro Section -->
         <section id="intro" class="section">
             <div class="text-content">
                 <h2>Intro</h2>
@@ -26,7 +31,6 @@
             <img src="/images/holdingImage.jpg" alt="Intro Image" class="project-image">
         </section>
 
-        <!-- Experience Section -->
         <section id="experience" class="section">
             <div class="text-content">
                 <h2>Experience</h2>
@@ -35,7 +39,6 @@
             <img src="/images/holdingImage.jpg" alt="Experience Image" class="project-image">
         </section>
 
-        <!-- Achievements Section -->
         <section id="achievements" class="section">
             <div class="text-content">
                 <h2>Achievements</h2>
@@ -45,10 +48,8 @@
         </section>
     </main>
 
-    <!-- Contact Section -->
     <footer>
         <a href="/contact" class="contact-btn">Contact Me</a>
     </footer>
-
 </body>
 </html>
