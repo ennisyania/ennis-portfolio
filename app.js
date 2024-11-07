@@ -1,28 +1,26 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const port = 3000;
-
-// Set the view engine to EJS
-app.set('view engine', 'ejs');
 
 // Serve static files from the "public" directory
 app.use(express.static('public'));
 
-// Define the route for the home page
+// Define the routes to serve HTML files
 app.get('/', (req, res) => {
-    res.render('index'); 
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 app.get('/about', (req, res) => {
-    res.render('about'); 
+    res.sendFile(path.join(__dirname, 'views', 'about.html'));
 });
 app.get('/projects', (req, res) => {
-    res.render('projects'); 
+    res.sendFile(path.join(__dirname, 'views', 'projects.html'));
 });
 app.get('/codesProjects', (req, res) => {
-    res.render('codesProjects'); 
+    res.sendFile(path.join(__dirname, 'views', 'codesProjects.html'));
 });
 app.get('/designProjects', (req, res) => {
-    res.render('designProjects'); 
+    res.sendFile(path.join(__dirname, 'views', 'designProjects.html'));
 });
 
 // Start the server

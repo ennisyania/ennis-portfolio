@@ -8,10 +8,10 @@
 }
 
 body {
-    background-color: transparent;
-    color: #bdbaa7  ;
+    color: #bdbaa7;
 }
 
+/* Header Styling */
 header {
     display: flex;
     justify-content: space-between;
@@ -19,46 +19,58 @@ header {
     padding: 20px;
     opacity: 80%;
     background-color: #bdbaa7;
-    color: #400504 ;
+    color: #400504;
+}
+
+/* Background Styles */
+.background-programming,
+.background-projects,
+.background-design,
+.background-home,
+.background-about {
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
 .background-programming {
-    background-image: url('/images/codesBckgrnd.png'); 
-    background-size:cover;    
-    background-color:#400504 ;
-    background-repeat:repeat-y ;
-    background-attachment: fixed; 
-    min-height: 100vh;           
+    background-image: url('/images/codesBckgrnd.png');
+    background-color: #400504;
 }
 
 .background-design {
-    background-image: url('/images/designBckgrnd.png'); 
-    background-size:cover;    
-    background-color:#400504 ;
-    background-repeat:repeat-y ;
-    background-attachment: fixed; 
-    min-height: 100vh;           
+    background-image: url('/images/designBckgrnd.png');
+    background-color: #400504;
 }
 
 .background-home {
-    background-image: url('/images/background1.png'); 
-    background-size:cover;     
-    background-color:#400504 ;
-    background-repeat:repeat-y ;
-    background-attachment: fixed; 
-    min-height: 100vh;           
+    background-image: url('/images/background1.png');
+    background-color: #400504;
 }
 
+.background-projects {
+    background-image: url('/images/bckgrnd2.png');
+    background-color: #400504;
+}
+
+.background-about {
+    background-image: url('/images/aboutBckgrnd.png');
+    background-color: #400504;
+}
+
+/* Logo */
 .logo img {
-    width: 30px; 
-    height: auto; 
+    width: 30px;
+    height: auto;
     vertical-align: middle;
 }
 
+/* Navigation Styling */
 nav a {
-    margin-left: 15px; 
+    margin-left: 15px;
     text-decoration: none;
-    color: #400504; 
+    color: #400504;
 }
 
 nav a:hover {
@@ -69,18 +81,55 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* Hero Section */
 .hero {
-    background: url('your-background-image-url-here') no-repeat center center/cover;
-    height:800px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+
+.project-button-sections {
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.general-btn {
+.project-button-sections div {
+    padding: 90px 60px;              
+
+    cursor: pointer;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 20px auto;                
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;               
+}
+
+.project-btn {
+    padding: 90px 60px;              
+    font-size: 1.2rem;
+    background-color: #010000;
+    color: #BDBAA7;
+    border: 20px solid #340202;        
+    cursor: pointer;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 20px auto;                
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;   
+}
+
+
+
+/* Buttons */
+.general-btn,
+.contact-btn {
     padding: 20px 60px;
     font-size: 1.2rem;
     background-color: #010000;
@@ -88,16 +137,18 @@ html {
     border: none;
     cursor: pointer;
     border-radius: 40px;
-    display: inline-block; 
-    margin-top: 20px; 
-    text-decoration: none; 
-    text-align: center; 
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.general-btn:hover {
+.general-btn:hover,
+.contact-btn:hover {
     background-color: #333;
 }
 
+/* About Section */
 .about-content {
     display: flex;
     justify-content: space-between;
@@ -109,8 +160,8 @@ html {
 .about-left {
     display: flex;
     margin-left: 100px;
-    flex-direction: column; 
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .about-image {
@@ -128,9 +179,29 @@ html {
 }
 
 .about-text {
-    margin-top: 20px; 
+    margin-top: 20px;
     text-align: left;
-    width:80%;
+    width: 80%;
+}
+
+/* Section Styles */
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    margin: 20px 0;
+}
+
+.text-content {
+    flex: 1;
+    text-align: center; /* Center text */
+}
+
+.section-image {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
 }
 
 /* Divider Style */
@@ -140,15 +211,14 @@ html {
     margin: 40px 0;
 }
 
-
 /* Projects Section */
 .projects {
     padding: 50px 100px;
-    background-color: #bdbaa7 ;
-    text-align: center; 
-    color: #400504 ;
+    background-color: #bdbaa7;
+    text-align: center;
+    color: #400504;
     border-radius: 20%;
-    margin: 20px; 
+    margin: 20px;
 }
 
 .project-header {
@@ -156,7 +226,7 @@ html {
     gap: 20px;
 }
 
-/* Design page section */
+/* Design Page Section */
 .main-design-section {
     text-align: center;
     margin-top: 15px;
@@ -165,13 +235,13 @@ html {
 .main-design-section img.project-image {
     display: block;
     margin: 0 auto;
-    max-width: 50%; 
+    max-width: 50%;
 }
 
 .main-design-section .description-title {
-    margin-top: 15px; /* Adds space between the image and the description title */
+    margin-top: 15px;
     font-size: 1.5rem;
-    color: #bdbaa7; 
+    color: #bdbaa7;
 }
 
 .main-design-section p {
@@ -181,8 +251,7 @@ html {
     margin: 10px auto;
 }
 
-
-/* Programming page section */
+/* Programming Page Section */
 .project-section {
     display: flex;
     flex-wrap: wrap;
@@ -195,22 +264,22 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 100%; /* Limit the width to control layout */
-    background-color: transparent; /* Optional background for better visibility */
+    max-width: 100%;
+    background-color: transparent;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
-    max-width: 600px; /* Adjust to fit your needs */
+    max-width: 600px;
     margin-right: 50px;
-    margin-left: 50px; /* Space between image and description */
+    margin-left: 50px;
     border-radius: 40px;
 }
 
 .description {
-    flex: 1; /* This lets the description take up remaining space */
+    flex: 1;
     margin-left: 50px;
 }
 
@@ -223,6 +292,16 @@ html {
     margin-top: 10px;
     font-size: 1em;
     color: #bdbaa7;
+}
+
+/* About Page Styling */
+#header {
+    text-align: center;
+    font-weight: bolder;
+    color: #400504;
+    padding: 50px 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 0px #bdbaa7, -2px -2px 0px #bdbaa7, 2px -2px 0px #bdbaa7, -2px 2px 0px #bdbaa7;
 }
 
 /* Footer / Contact Section */
