@@ -264,7 +264,8 @@ html {
     margin-top: 15px;
 }
 
-.main-design-section img.project-image {
+.main-design-section img.project-image 
+.main-design-section source.profile-image{
     display: block;
     margin: 0 auto;
     max-width: 50%;

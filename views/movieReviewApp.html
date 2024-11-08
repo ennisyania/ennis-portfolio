@@ -7,11 +7,10 @@
     <meta name="description" content="Enni Sya'nia - Aspiring Software Engineer Portfolio">
     <title>Enni Sya'nia | Aspiring Software Engineer</title>
     <link rel="stylesheet" type="text/css" href="../styles.css">
-
     <link rel="icon" href="../images/Logo.png" type="image/png">
 </head>
 
-<body class="background-programming">
+<body class="background-design">
     <header>
         <div class="logo">
             <img src="../images/Logo.png" alt="EN">
@@ -24,62 +23,67 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <a href="#project-section" class="general-btn">Programming</a>
-    </section>
-
-    <main id="project-section" class="project-section">
-        <section class="project">
+    <main>
+        <section class="main-design-section">
             <video controls width="600">
                 <source src="../images/1108.mp4" type="video/mp4" class="project-image">
             </video>    
-                <div class="description">
-            <h2>Movie Review App</h2>
-            <p>This is a basic Movie Reviews app that I created to continue 
-                enhancing my programming skills. I used EJS, JavaScript, and CSS to 
-                build this basic website. The project took me around two days to 
-                complete as I was learning how to implement new features that I had 
-                not worked with before during the process.
+            <h2 id="description" class="description-title">Description</h2>
+            <p>This is a basic Movie Reviews app that I created where users are able to 
+                write reviews and add new movies into a database.</p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="project">
+            <div>
+                <img src="../images/movieAppStructure.png" alt="projectStructure" class="project-image" style="height:500;">
                 <br>
-                This project taught me the basics of how websites can work with databases, 
-                allowing for live editing within the website.
-            </p>
-            <button class="general-btn" onclick="location.href='/codesProjects/movieReviewApp.html'">Learn More</button>
+                <img src="../images/movieData.png" alt="movieData" class="project-image" style="height: 300px;">
+                <br>
+                <img src="../images/reviewData.png" alt="reviewData" class="project-image" style="height: 300px;">
+            </div>
+            <!-- Description -->
+            <div class="description">
+
+                <p>The video above demonstrates how the app can store reviews 
+                    from different users for each individual movie in the database. 
+                    The app also allows users to add, edit, and remove movies from 
+                    the database. 
+                    Additionally, reviews can be edited and deleted as needed.
+                </p>
+                <br>
+                <p>
+                    The video above demonstrates how the app can store reviews from 
+                    different users for each individual movie in the database. 
+                    The app also allows users to add, edit, and remove movies from the 
+                    database. 
+                    Additionally, reviews can be edited and deleted as needed.
+                </p>
+                <br>
+                <p>
+                    This project taught me the basics of how websites interact with 
+                    databases, allowing for live editing within the website. 
+                    I also learned the importance of color schemes, as they affect 
+                    readability and influence the overall feel of the website, 
+                    enhancing the user experience.
+
+
+                </p>
             </div>
         </section>
 
-        <section class="project">
-            <div class="description">
-                <h2>Description</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            </div>
-            <img src="../images/holdingImage.jpg" alt="Project Image" class="project-image">
-        </section>
+    
 
-        <section class="project">
-            <img src="../images/holdingImage.jpg" alt="Project Image" class="project-image">
-            <div class="description">
-                <h2>Description</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <footer>
+            <div class="footer-container">
+                <a href="contact.html" class="contact-btn">Contact Me</a>
+                <br>
+                <p class="copyright">Copyright © Enni Sya'nia 2024</p>
             </div>
-        </section>
-
-        <section class="project">
-            <div class="description">
-                <h2>Description</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            </div>
-            <img src="../images/holdingImage.jpg" alt="Project Image" class="project-image">
-        </section>
+        </footer>
     </main>
 
-    <footer>
-        <div class="footer-container">
-            <a href="contact.html" class="contact-btn">Contact Me</a>
-            <br>
-            <p class="copyright">Copyright © Enni Sya'nia 2024</p>
-        </div>
-    </footer>
     <script src="/scripts.js"></script>
 </body>
 
