@@ -85,9 +85,11 @@ html {
 .hero {
     height: 800px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
+
+    flex-direction: column;
 } 
 
 /* Projects selection page */
