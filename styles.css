@@ -233,9 +233,9 @@ html {
 
 .logo-image {
     flex: 1; 
-    height: 100px;
+    height: 400px;
     width: auto;
-    object-fit: cover; 
+    object-fit:scale-down; 
     border-radius: 0.625rem; 
     display: flex;
 }
