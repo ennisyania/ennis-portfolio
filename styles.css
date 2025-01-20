@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem; /* Use rem for scalable spacing */
+    padding: 1.25rem;
     opacity: 80%;
     background-color: #bdbaa7;
     color: #400504;
