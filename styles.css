@@ -217,7 +217,7 @@ html {
 /* Section Styles */
 .section {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-around;
     padding: 40px;
     margin: 20px 0;
@@ -231,12 +231,15 @@ html {
     border-radius: 20px;
     padding: 20px; 
     max-width: 50%; 
+    display: flex;
+    justify-content: center;
 }
 
 .logo-image {
     flex: 1; 
     max-width: 50%; 
     border-radius: 10px; 
+    object-fit: cover; 
 }
 
 .section-image {
