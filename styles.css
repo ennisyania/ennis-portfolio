@@ -4,11 +4,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
+    font-size: 1.25rem; /* Relative size */
 }
 
 body {
     color: #bdbaa7;
+    line-height: 1.6; /* Improves readability */
 }
 
 /* Header Styling */
@@ -16,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 2rem; /* Use rem for scalable spacing */
     opacity: 80%;
     background-color: #bdbaa7;
     color: #400504;
@@ -61,16 +62,17 @@ header {
 
 /* Logo */
 .logo img {
-    width: 30px;
+    width: 2rem;
     height: auto;
     vertical-align: middle;
 }
 
 /* Navigation Styling */
 nav a {
-    margin-left: 15px;
+    margin-left: 1rem;
     text-decoration: none;
     color: #400504;
+    font-size: 1rem; /* Scales based on root font size */
 }
 
 nav a:hover {
@@ -83,18 +85,17 @@ html {
 
 /* Hero Section */
 .hero {
-    height: 800px;
+    height: 80vh; /* Make it relative to the viewport */
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-
     flex-direction: column;
+    padding: 2rem;
 } 
 
 /* Projects selection page */
 .project-button-sections {
-    height: 800px;
+    height: 80vh; /* Relative to the viewport */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,33 +103,30 @@ html {
 }
 
 .project-button-sections div {
-    padding: 90px 60px;              
-
+    padding: 6rem 4rem;              
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 2rem;
     display: inline-block;
-    margin: 20px auto;                
+    margin: 1.25rem auto;                
     text-decoration: none;
     text-align: center;
     width: fit-content;               
 }
 
 .project-btn {
-    padding: 90px 60px;              
+    padding: 6rem 4rem;             
     font-size: 1.2rem;
     background-color: #010000;
     color: #BDBAA7;
-    border: 20px solid #340202;        
+    border: 1.25rem solid #340202;    
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 2rem;
     display: inline-block;
-    margin: 20px auto;                
+    margin: 1.25rem auto;            
     text-decoration: none;
     text-align: center;
     width: fit-content;   
 }
-
-
 
 /* Contact page */
 .contact-button-sections {
@@ -141,10 +139,10 @@ html {
 
 .contact-button {
     background-color: #000; 
-    margin: 30px;
-    padding: 40px 100px; 
-    border-radius: 60px; 
-    width:500px;
+    margin: 2rem;
+    padding: 2.5rem 6.25rem; 
+    border-radius: 3.75rem; 
+    width: 50%;
     display: flex; 
     align-items: center; 
     text-decoration: none;
@@ -152,23 +150,21 @@ html {
 
 .contact-button img {
     width: auto; 
-    height:50px;
+    height: 3rem;
 }
-
-
 
 /* Buttons */
 .general-btn,
 .contact-btn {
-    padding: 20px 60px;
+    padding: 1.25rem 3.75rem;
     font-size: 1.2rem;
     background-color: #010000;
     color: #707070;
     border: none;
     cursor: pointer;
-    border-radius: 40px;
+    border-radius: 2rem;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     text-decoration: none;
     text-align: center;
 }
@@ -183,33 +179,33 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 20px;
+    gap: 1.25rem;
     width: 100%;
 }
 
 .about-left {
     display: flex;
-    margin-left: 100px;
+    margin-left: 6.25rem;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .about-image {
-    width: 600px;
-    margin: 40px;
-    border-radius: 40px;
+    width: 50%;
+    margin: 2.5rem;
+    border-radius: 2rem;
 }
 
 .profile-image {
-    width: 60px;
-    height: 600px;
-    padding: 50px;
+    width: 3.75rem;
+    height: 37.5rem;
+    padding: 3.125rem;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .about-text {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     text-align: left;
     width: 80%;
 }
@@ -219,9 +215,9 @@ html {
     display: flex;
     align-items: stretch;
     justify-content: space-around;
-    padding: 40px;
-    margin: 20px 0;
-    gap: 20px;
+    padding: 2.5rem;
+    margin: 1.25rem 0;
+    gap: 1.25rem;
 }
 
 .text-content {
@@ -229,8 +225,8 @@ html {
     flex-direction: column;
     text-align: center;
     background-color: rgba(52, 2, 2, 0.4);
-    border-radius: 20px;
-    padding: 20px; 
+    border-radius: 1.25rem;
+    padding: 1.25rem; 
     max-width: 50%; 
     display: flex;
 }
@@ -239,52 +235,52 @@ html {
     flex: 1; 
     width: 60%;
     object-fit: cover; 
-    border-radius: 10px; 
+    border-radius: 0.625rem; 
 }
 
 .section-image {
-    width: 300px;
+    width: 18.75rem;
     height: auto;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 /* Divider Style */
 .divider {
-    height: 10px;
+    height: 0.625rem;
     background-color: #bdbaa7;
-    margin: 40px 0;
+    margin: 2.5rem 0;
 }
 
 /* Projects Section */
 .projects {
-    padding: 50px 100px;
+    padding: 3.125rem 6.25rem;
     background-color: #bdbaa7;
     text-align: center;
     color: #400504;
     border-radius: 20%;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .project-header {
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 /* Design Page Section */
 .main-design-section {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 0.9375rem;
 }
 
-.main-design-section img.project-image 
-.main-design-section source.profile-image{
+.main-design-section img.project-image, 
+.main-design-section source.profile-image {
     display: block;
     margin: 0 auto;
     max-width: 50%;
 }
 
 .main-design-section .description-title {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     font-size: 1.5rem;
     color: #bdbaa7;
 }
@@ -292,27 +288,28 @@ html {
 .main-design-section p {
     font-size: 1rem;
     color: #bdbaa7;
-    max-width: 800px;
-    margin: 10px auto;
+    max-width: 50rem;
+    margin: 0.625rem auto;
 }
 
 .project {
     position: relative;
     width: 80%;
     margin: auto;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 /* Carousel container and images */
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 600px;
+    max-width: 37.5rem;
     margin: auto;
     overflow: hidden;
-    height: 400px; /* Add fixed height to maintain container size */
-    border: 1px solid #ccc;  /* Temporary border to see container */
+    height: 25rem; /* Fixed height to maintain container size */
+    border: 0.0625rem solid #ccc;  /* Temporary border to see container */
 }
+
 
 .carousel {
     position: relative;
@@ -346,9 +343,10 @@ button.next {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 15px;
+    padding: 1em; /* Use relative units */
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-size: 1rem; /* Ensure button text scales */
 }
 
 button.prev:hover,
@@ -357,45 +355,44 @@ button.next:hover {
 }
 
 .prev {
-    left: 10px;
+    left: 1em;
 }
 
 .next {
-    right: 10px;
+    right: 1em;
 }
-
 
 /* Programming Page Section */
 .project-section {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2%; /* Use percentage-based gap for flexibility */
     justify-content: center;
-    padding: 20px;
+    padding: 2vh 2vw; /* Use viewport-based padding */
 }
 
 .project {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 100%;
+    width: 100%; /* Ensure it stretches appropriately */
+    max-width: 90%; /* Limit the width for responsiveness */
     background-color: transparent;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2vh; /* Adjust padding */
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
     flex: 1;
-    max-width: 50%;
-    margin-right: 50px;
-    margin-left: 50px;
-    border-radius: 20px;
+    max-width: 40%; /* Adjust image size relative to container */
+    margin: 1em;
+    border-radius: 1em;
 }
 
 .description {
     flex: 1;
-    margin-left: 50px;
+    margin: 1em;
 }
 
 .description h2 {
@@ -404,7 +401,7 @@ button.next:hover {
 }
 
 .description p {
-    margin-top: 10px;
+    margin-top: 0.5em;
     font-size: 1em;
     color: #bdbaa7;
 }
@@ -414,9 +411,9 @@ button.next:hover {
     text-align: center;
     font-weight: bolder;
     color: #400504;
-    padding: 50px 0;
-    font-size: 3rem;
-    text-shadow: 2px 2px 0px #bdbaa7, -2px -2px 0px #bdbaa7, 2px -2px 0px #bdbaa7, -2px 2px 0px #bdbaa7;
+    padding: 5vh 0;
+    font-size: 2.5rem;
+    text-shadow: 0.125em 0.125em 0px #bdbaa7, -0.125em -0.125em 0px #bdbaa7;
 }
 
 /* Footer / Contact Section */
@@ -425,24 +422,23 @@ footer {
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 20px;
+    padding: 2vh 2vw;
     color: #707070;
     background-color: #010000;
+    font-size: 1rem; /* Make text responsive */
 }
 
 .footer-container {
-    text-align: center; /* Center the content */
-    padding: 10px;
+    text-align: center;
+    padding: 1em;
 }
 
-
 .copyright {
-    font-size: 12px; /* Make the text smaller */
-    color: #666; /* Optionally make it a lighter color */
-    margin: 0; /* Remove default paragraph margin */
+    font-size: 0.8rem; /* Adjust text size */
+    color: #666;
+    margin: 0;
     align-items: center;
 }
 
 .contact-btn:hover {
     background-color: #333;
-}
