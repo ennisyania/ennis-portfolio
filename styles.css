@@ -233,7 +233,8 @@ html {
 
 .logo-image {
     flex: 1; 
-    width: 60%;
+    height: 100px;
+    width: auto;
     object-fit: cover; 
     border-radius: 0.625rem; 
     display: flex;
