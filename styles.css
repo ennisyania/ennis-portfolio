@@ -385,6 +385,7 @@ button.next:hover {
 
 .project-image {
     flex: 1;
+    height: auto;
     max-width: 50%;
     margin-right: 50px;
     margin-left: 50px;
