@@ -233,6 +233,12 @@ html {
     max-width: 50%; 
 }
 
+.logo-image {
+    flex: 1; 
+    max-width: 50%; 
+    border-radius: 10px; 
+}
+
 .section-image {
     width: 300px;
     height: auto;
