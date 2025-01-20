@@ -236,6 +236,7 @@ html {
     width: 60%;
     object-fit: cover; 
     border-radius: 0.625rem; 
+    display: flex;
 }
 
 .section-image {
