@@ -226,6 +226,7 @@ html {
 
 .text-content {
     flex: 1; 
+    flex-direction: column;
     text-align: center;
     background-color: rgba(52, 2, 2, 0.4);
     border-radius: 20px;
