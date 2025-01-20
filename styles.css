@@ -374,11 +374,12 @@ button.next:hover {
 .project {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     width: 100%; /* Ensure it stretches appropriately */
     max-width: 90%; /* Limit the width for responsiveness */
     background-color: transparent;
-    padding: 2vh; /* Adjust padding */
+    padding: 2vh; 
     border-radius: 0.5em;
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
