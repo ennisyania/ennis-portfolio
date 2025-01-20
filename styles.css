@@ -230,7 +230,8 @@ html {
     text-align: center; /* Center text */
     background-color: rgba(52, 2, 2, 0.4);
     border-radius: 20px;
-    width: 100px;
+    padding: 20px;
+    max-width: 50%;
 }
 
 .section-image {
@@ -377,10 +378,11 @@ button.next:hover {
 }
 
 .project-image {
-    max-width: 600px;
+    flex: 1;
+    max-width: 50%;
     margin-right: 50px;
     margin-left: 50px;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
 .description {
