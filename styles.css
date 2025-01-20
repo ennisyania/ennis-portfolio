@@ -85,7 +85,7 @@ html {
 
 /* Hero Section */
 .hero {
-    height: 80vh; /* Make it relative to the viewport */
+    height: 100vh; /* Make it relative to the viewport */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -385,7 +385,7 @@ button.next:hover {
 
 .project-image {
     flex: 1;
-    height: auto;
+    height: 500px;
     max-width: 60%;
     margin-right: 50px;
     margin-left: 50px;
