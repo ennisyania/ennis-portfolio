@@ -230,7 +230,7 @@ html {
     text-align: center; /* Center text */
     background-color: rgba(52, 2, 2, 0.4);
     border-radius: 20px;
-    width: 20%;
+    width: 100px;
 }
 
 .section-image {
