@@ -142,8 +142,9 @@ html {
     margin: 2rem;
     padding: 2.5rem 6.25rem; 
     border-radius: 3.75rem; 
-    width: 50%;
+
     display: flex; 
+    align-self: center;
     align-items: center; 
     text-decoration: none;
 }
@@ -156,7 +157,7 @@ html {
 /* Buttons */
 .general-btn,
 .contact-btn {
-    padding: 1.25rem 3.75rem;
+    padding: 1.25rem;
     font-size: 1.2rem;
     background-color: #010000;
     color: #707070;
@@ -165,7 +166,6 @@ html {
     border-radius: 2rem;
     display: inline-block;
     margin-top: 1.25rem;
-    text-decoration: none;
     text-align: center;
 }
 
@@ -191,7 +191,7 @@ html {
 }
 
 .about-image {
-    width: 50%;
+    width: 20rem;
     margin: 2.5rem;
     border-radius: 2rem;
 }
@@ -259,7 +259,7 @@ html {
     background-color: #bdbaa7;
     text-align: center;
     color: #400504;
-    border-radius: 20%;
+    border-radius: 20px;
     margin: 1.25rem;
 }
 
@@ -386,16 +386,24 @@ button.next:hover {
     box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
 }
 
+.projectShow-image {
+    flex: 1;
+    display: flex;
+    height: auto;
+    object-fit: scale-down;
+    width: 60%;
+    border-radius: 20px;
+}
+
 .project-image {
     flex: 1;
-    height: auto;
-    max-width: 30%;
-    margin-left: 50px;
+    display: flex;
+    width: 20rem;
+    margin: 2rem;
     border-radius: 20px;
 }
 
 .description {
-    flex: 1;
     margin: 1em;
 }
 
@@ -440,7 +448,6 @@ footer {
 .copyright {
     font-size: 0.8rem; /* Adjust text size */
     color: #666;
-    margin: 0;
     align-items: center;
 }
 
