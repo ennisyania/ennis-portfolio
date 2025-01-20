@@ -90,7 +90,7 @@ html {
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: 2.5rem;
 } 
 
 /* Projects selection page */
@@ -386,7 +386,7 @@ button.next:hover {
 .project-image {
     flex: 1;
     height: auto;
-    max-width: 50%;
+    max-width: 60%;
     margin-right: 50px;
     margin-left: 50px;
     border-radius: 20px;
