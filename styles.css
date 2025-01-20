@@ -237,7 +237,7 @@ html {
 
 .logo-image {
     flex: 1; 
-    height: 60%;
+    width: 60%;
     object-fit: cover; 
     border-radius: 10px; 
 }
