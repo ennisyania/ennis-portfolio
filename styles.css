@@ -218,16 +218,17 @@ html {
 .section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 40px;
     margin: 20px 0;
+    gap: 20px;
 }
 
 .text-content {
     flex: 1;
     text-align: center; /* Center text */
     background-color: rgba(52, 2, 2, 0.4);
-    border-radius: 20;
+    border-radius: 20px;
     width: 20%;
 }
 
