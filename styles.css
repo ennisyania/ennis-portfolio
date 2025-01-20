@@ -225,13 +225,12 @@ html {
 }
 
 .text-content {
-    flex: 1;
-    align-self: left;
-    text-align: center; /* Center text */
+    flex: 1; 
+    text-align: center;
     background-color: rgba(52, 2, 2, 0.4);
     border-radius: 20px;
-    padding: 20px;
-    max-width: 50%;
+    padding: 20px; 
+    max-width: 50%; 
 }
 
 .section-image {
