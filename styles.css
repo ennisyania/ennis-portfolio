@@ -403,6 +403,14 @@ button.next:hover {
     border-radius: 20px;
 }
 
+.project-image-verticle {
+    flex: 1;
+    display: flex;
+    width: 10rem;
+    margin: 2rem;
+    border-radius: 20px;
+}
+
 .description {
     margin: 1em;
 }
