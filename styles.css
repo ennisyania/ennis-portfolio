@@ -375,9 +375,9 @@ button.next:hover {
 
 .project {
     display: flex;
+    flex: 1;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
     width: 100%; /* Ensure it stretches appropriately */
     max-width: 90%; /* Limit the width for responsiveness */
     background-color: transparent;
@@ -393,6 +393,7 @@ button.next:hover {
     object-fit: scale-down;
     width: 60%;
     border-radius: 20px;
+    margin: 10%;
 }
 
 .project-image {
