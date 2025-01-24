@@ -406,7 +406,7 @@ button.next:hover {
 .project-image-verticle {
     flex: 1;
     display: flex;
-    width: 10rem;
+    width: 20rem;
     margin: 2rem;
     border-radius: 20px;
 }
