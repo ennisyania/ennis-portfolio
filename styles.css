@@ -185,14 +185,16 @@ html {
 
 .about-left {
     display: flex;
-    margin-left: 6.25rem;
     flex-direction: column;
     align-items: flex-start;
+    align-items: center;
 }
 
 .about-image {
-    width: 20rem;
-    margin: 2.5rem;
+    align-items: center;
+    width: auto;
+    height: 20rem;
+    margin: auto;
     border-radius: 2rem;
 }
 
@@ -255,17 +257,18 @@ html {
 
 /* Projects Section */
 .projects {
-    padding: 3.125rem 6.25rem;
+    padding: 3.125rem;
     background-color: #bdbaa7;
     text-align: center;
     color: #400504;
     border-radius: 20px;
-    margin: 1.25rem;
+    margin: 1.50rem;
+    height:40rem;
 }
 
 .project-header {
     align-items: center;
-    gap: 1.25rem;
+
 }
 
 /* Design Page Section */
